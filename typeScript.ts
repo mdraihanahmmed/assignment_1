@@ -89,6 +89,7 @@
   };
   const result_5 = getMostExpensiveProduct(products);
   console.log(result_5);
+
   enum Day {
     Monday,
     Tuesday,
@@ -99,13 +100,13 @@
     Sunday,
   }
   const getDayType = (day: Day): string => {
-    if (day === Day.Sunday) {
+    if (day === Day.Sunday || day === Day.Saturday) {
       return "Weekend";
     } else {
       return "Weekday";
     }
   };
-  const result_6 = getDayType(Day.Sunday);
+  const result_6 = getDayType(Day.Monday);
   console.log(result_6);
 
   const squareAsync = async (n: number): Promise<number> => {
